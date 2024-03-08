@@ -1,8 +1,8 @@
 
 import './Pesquisa.css'
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import Input from '../Input'
-import { useState } from 'react'
 
 const Container = styled.section `
     color: #FFF;
@@ -28,6 +28,22 @@ const Subtitulo = styled.h3`
 const Pesquisa = () => {
 
     const [digitado, setDigitado] = useState('')
+    const [legos, setLegos] = useState([])
+
+    console.log("PESQUISADO", legos)
+
+    useEffect(() => {
+        fetch('http://localhost:3001/legos')
+            .then(res => res.json())
+            .then(res => {
+                setLegos(res);
+                
+                console.log("RES", res);
+            })
+            .catch(error => console.error('Erro ao carregar Legos:', error));
+    }, []);
+
+    
 
     return (
         <section className="container m-auto">
@@ -35,7 +51,11 @@ const Pesquisa = () => {
                 <Titulo>Já sabe por onde começar?</Titulo>
                 <Subtitulo>Encontre seu Lego em nossa estante.</Subtitulo>
                 <Input placeholder="Escreva sua próxima leitura"
-                onBlur={event => setDigitado(event.target.value)}/>
+                onBlur={event => {
+                    const textoDigitado = event.target.value;
+                    const respostaPesquisa = legos.filter( lego => lego.nome.includes(textoDigitado))
+                    setLegos(respostaPesquisa)
+                }}/>
             </Container>
             <p>{digitado}</p>
         </section>

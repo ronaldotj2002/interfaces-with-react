@@ -11,4 +11,4 @@
 
 ### Iniciar o JSON-SERVER
  - Na pasta json-api, clique com o botão direito do mouse e escolha a opção "Abrir no Terminal integrado" 
- - Use o comando: npx json-server --watch server.json
+ - Use o comando: npx json-server --port 3001 dados.json
