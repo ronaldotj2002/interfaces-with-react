@@ -1,0 +1,15 @@
+
+
+{
+    "legos": [
+         {"id": 1, "nome": "Casarão Lego", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg" },
+         {"id": 2, "nome": "Lego Doce", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg" },
+         {"id": 3, "nome": "Casarão 2", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg" },
+         {"id": 4, "nome": "Lego", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg" },
+         {"id": 5, "nome": "Casa Lego", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg" },
+         {"id": 6, "nome": "Loja Lego", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg" },
+         {"id": 7, "nome": "Estrutura", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg" },
+         {"id": 8, "nome": "Lego", "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg" }
+
+    ]
+}

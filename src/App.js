@@ -1,16 +1,13 @@
-import './App.css';
-import Header from './componentes/header'
-import logo from './img/logo.png'
+import Header from './componentes/Header'
+import Pesquisa from './componentes/Pesquisa'
+
+
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      {/* <header className="app-header">
-        <div className="logo">
-          <img src={logo} alt='Logo'/>
-        </div>
-      </header> */}
+      <Pesquisa />
     </div>
   );
 }
