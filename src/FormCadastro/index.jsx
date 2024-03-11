@@ -6,8 +6,8 @@ import Input from "../componentes/Input"
 const FormCadastro = () => {
 
     const [nome, setNome] = useState('');
+    const [src, setSrc] = useState('');
     const [valor, setValor] = useState('');
-    const [urlDaImagem, setUrlDaImagem] = useState('');
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -20,8 +20,8 @@ const FormCadastro = () => {
             },
             body: JSON.stringify({
               nome,
-              valor,
-              urlDaImagem,
+              src,
+              valor
             }),
           });
           
@@ -31,8 +31,8 @@ const FormCadastro = () => {
             console.log('Cadastro realizado com sucesso!');
             // Limpar campos do formulário após o envio bem-sucedido
             setNome('');
+            setSrc('');
             setValor('');
-            setUrlDaImagem('');
           } else {
             // Ações em caso de erro na requisição
             console.error('Erro ao cadastrar Lego.');
@@ -54,17 +54,18 @@ const FormCadastro = () => {
                 </label>
 
                 <label>
-                    Valor: 
+                    ULR da Imagem: 
                     <Input placeholder="Url da imagem" 
-                        value={valor} 
-                        onChange={(e) => setValor(e.target.value)}
+                        value={src} 
+                        onChange={(e) => setSrc(e.target.value)}
                         required/>
                 </label>
 
                 <label>
+                    Valor: 
                     <Input placeholder="Valor" 
-                        value={urlDaImagem} 
-                        onChange={(e) => setUrlDaImagem(e.target.value)}
+                        value={valor} 
+                        onChange={(e) => setValor(e.target.value)}
                         required
                         />
                     </label>

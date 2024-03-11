@@ -52,7 +52,25 @@
       "id": "61c9",
       "nome": "Teste Cadastro ",
       "valor": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true",
-      "urlDaImagem": "300"
+      "src": "300"
+    },
+    {
+      "id": "eca8",
+      "nome": "teste",
+      "valor": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true",
+      "urlDaImagem": "100"
+    },
+    {
+      "id": "6a57",
+      "nome": "teste 2",
+      "valor": "50",
+      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true"
+    },
+    {
+      "id": "885f",
+      "nome": "teste 3",
+      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true",
+      "valor": "10"
     }
   ],
   "favoritos": [
