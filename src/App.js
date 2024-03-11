@@ -1,13 +1,15 @@
-import Header from './componentes/Header'
 import Pesquisa from './componentes/Pesquisa'
+import Novidades from './componentes/Novidades'
+// import FormCadastro from './FormCadastro'
 
 
 
 function App() {
   return (
     <div>
-      <Header />
       <Pesquisa />
+      <Novidades />
+      {/* <FormCadastro /> */}
     </div>
   );
 }

@@ -1,10 +1,11 @@
-
-import './Pesquisa.css'
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import Input from '../Input'
 
-const Container = styled.section `
+
+
+
+const Container = styled.section`
     color: #FFF;
     text-align: center;
     padding: 85px 0;
@@ -25,42 +26,89 @@ const Subtitulo = styled.h3`
     margin-bottom: 40px;
 `
 
-const Pesquisa = () => {
+const Resposta = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #999;
+    
+    p {
+        margin-left: 15px
+    }
 
-    const [digitado, setDigitado] = useState('')
-    const [legos, setLegos] = useState([])
+    img {
+        width: 250px;
+    }
 
-    console.log("PESQUISADO", legos)
+
+`
+
+const FiltroBusca = ({ data, busca }) => {
+    const [filtroData, setFiltroData] = useState([]);
 
     useEffect(() => {
+        const resultadoBusca = data.filter(item => item.nome.toLowerCase().includes(busca.toLowerCase()));
+        setFiltroData(resultadoBusca);
+    }, [data, busca]);
+
+    if (!busca) {
+        return null; // Não exibe resultados se a pesquisa não foi realizada
+    }
+
+    return (
+        <section className="container m-auto">
+
+            {filtroData.map((item) => (
+                <Resposta>
+                    <img src={item.src} alt={item.nome} className="w-60"/>
+                    <p key={item.id} className="float-left">{item.nome}</p>
+                </Resposta>
+            ))}
+
+        </section>
+    );
+};
+
+const Pesquisa = () => {
+    const [legos, setLegos] = useState([]);
+    const [busca, setBusca] = useState('');
+
+    useEffect(() => {
+
         fetch('http://localhost:3001/legos')
             .then(res => res.json())
             .then(res => {
                 setLegos(res);
-                
-                console.log("RES", res);
             })
             .catch(error => console.error('Erro ao carregar Legos:', error));
     }, []);
 
     
+    const handleInputChange = event => {
+        setBusca(event.target.value);
+    };
 
     return (
-        <section className="container m-auto">
-            <Container>
-                <Titulo>Já sabe por onde começar?</Titulo>
-                <Subtitulo>Encontre seu Lego em nossa estante.</Subtitulo>
-                <Input placeholder="Escreva sua próxima leitura"
-                onBlur={event => {
-                    const textoDigitado = event.target.value;
-                    const respostaPesquisa = legos.filter( lego => lego.nome.includes(textoDigitado))
-                    setLegos(respostaPesquisa)
-                }}/>
-            </Container>
-            <p>{digitado}</p>
-        </section>
-    )
-}
+        <div className="pb-10">
+         
+            <section className="container m-auto">
+                <Container>
+                    <Titulo>Já sabe qual é o seu Lego favorito?</Titulo>
+                    <Subtitulo>Encontre seu Lego em nossa estante.</Subtitulo>
+                    <Input placeholder="Digite o nome do seu lego favorito"
+                        value={busca}
+                        onChange={handleInputChange}
+                    />
+                </Container>
+
+            </section>
+            <FiltroBusca data={legos} busca={busca} />
+        </div>
 
 
-export default Pesquisa
+    );
+};
+
+export default Pesquisa;
