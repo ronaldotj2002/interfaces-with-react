@@ -1,87 +1,52 @@
 {
   "legos": [
     {
-      "id": 1,
-      "nome": "Casarão Lego",
-      "valor": 500,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true"
-    },
-    {
-      "id": 2,
-      "nome": "Lego Doce",
-      "valor": 300,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true"
-    },
-    {
-      "id": 3,
+      "id": "3",
       "nome": "Casarão 2",
-      "valor": 400,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true"
+      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true",
+      "valor": "400"
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Lego",
-      "valor": 600,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true"
-    },
-    {
-      "id": 5,
-      "nome": "Casa Lego",
-      "valor": 700,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true"
-    },
-    {
-      "id": 6,
-      "nome": "Loja Lego",
-      "valor": 400,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true"
-    },
-    {
-      "id": 7,
-      "nome": "Estrutura",
-      "valor": 500,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true"
-    },
-    {
-      "id": 8,
-      "nome": "Lego",
-      "valor": 200,
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true"
-    },
-    {
-      "id": "61c9",
-      "nome": "Teste Cadastro ",
-      "valor": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true",
-      "src": "300"
-    },
-    {
-      "id": "eca8",
-      "nome": "teste",
-      "valor": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true",
-      "urlDaImagem": "100"
-    },
-    {
-      "id": "6a57",
-      "nome": "teste 2",
-      "valor": "50",
-      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true"
-    },
-    {
-      "id": "885f",
-      "nome": "teste 3",
       "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true",
-      "valor": "10"
+      "valor": "600"
+    },
+    {
+      "id": "5",
+      "nome": "Casa Lego",
+      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true",
+      "valor": "700"
+    },
+    {
+      "id": "7",
+      "nome": "Estrutura",
+      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true",
+      "valor": "500"
+    },
+    {
+      "id": "b376",
+      "nome": "New Lego",
+      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true",
+      "valor": "500"
+    },
+    {
+      "id": "f415",
+      "nome": "Novidade",
+      "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true",
+      "valor": "100"
     }
   ],
+  
   "favoritos": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Casarão Lego",
       "valor": 500,
       "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img2.jpg?raw=true"
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Lego Doce",
       "valor": 300,
       "src": "https://github.com/ronaldotj2002/interfaces-with-react/blob/581b9adeb462a10df19082397bcc615b7dd207a9/src/img/img1.jpg?raw=true"

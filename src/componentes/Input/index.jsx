@@ -1,15 +1,29 @@
-import styled from 'styled-components'
 
-const Input = styled.input`
-background-color:#fff;
-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.09);
-width: 40%;
-color: #999;
-border: 1px solid #ccc;
-font-size: 20px;
-padding: 20px;
-box-sizing: border-box;
-`
+import './Input.css'
+
+const Input = (props) => {
+
+
+    const dadosDigitado = (event) => {
+
+        const valor = event.target.value
+        props.dadosDigitado(valor)
+        console.log(valor)
+    }
+
+    return (
+        <div className="campo-input">
+            <label>{props.label}</label>
+            <input 
+                value={props.valor} 
+                onChange={dadosDigitado} 
+                placeholder={props.placeholder} 
+                required={props.obrigatorio}
+                type={props.type}
+                />
+        </div>
+    )
+}
 
 
 export default Input

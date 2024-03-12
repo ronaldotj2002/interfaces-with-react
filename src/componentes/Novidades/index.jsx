@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 const NovidadesLego = styled.div`
-    margin-top: 30px;
+    margin: 30px auto;
     display: block;
     width: 100%;
     justify-content: center;
@@ -13,7 +13,7 @@ const NovidadesLego = styled.div`
     img {
         width: 200px;
         float: left;
-        margin: 20px 10px;
+        margin: 20px;
     }
 
 
@@ -49,7 +49,7 @@ const Novidades = () => {
           
 
              {legos.map((item) => (
-             
+
                  <NovidadesLego>   
                         <img src={item.src} alt={item.nome} className='' />                    
                 </NovidadesLego>

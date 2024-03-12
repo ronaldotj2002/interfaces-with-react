@@ -63,7 +63,8 @@ const FiltroBusca = ({ data, busca }) => {
             {filtroData.map((item) => (
                 <Resposta>
                     <img src={item.src} alt={item.nome} className="w-60"/>
-                    <p key={item.id} className="float-left">{item.nome}</p>
+                    <p key={item.id} className="float-left">Nome: {item.nome}</p>
+                    
                 </Resposta>
             ))}
 
@@ -97,14 +98,22 @@ const Pesquisa = () => {
                 <Container>
                     <Titulo>Já sabe qual é o seu Lego favorito?</Titulo>
                     <Subtitulo>Encontre seu Lego em nossa estante.</Subtitulo>
-                    <Input placeholder="Digite o nome do seu lego favorito"
-                        value={busca}
-                        onChange={handleInputChange}
-                    />
+                    
+                    <div className="w-1/3 m-auto">
+                        <Input
+                            placeholder="Digite o nome do seu lego favorito" 
+                            valor={busca}
+                            dadosDigitado={valor => setBusca(valor)}
+                            onChange={handleInputChange}
+                            />
+                    </div>
+                  
                 </Container>
 
             </section>
-            <FiltroBusca data={legos} busca={busca} />
+            <div className="mt-28">
+                <FiltroBusca data={legos} busca={busca} />
+            </div>
         </div>
 
 

@@ -1,7 +1,6 @@
 import Pesquisa from './componentes/Pesquisa'
 import Novidades from './componentes/Novidades'
-// import FormCadastro from './FormCadastro'
-
+import Footer from './componentes/Footer'
 
 
 function App() {
@@ -9,7 +8,9 @@ function App() {
     <div>
       <Pesquisa />
       <Novidades />
-      {/* <FormCadastro /> */}
+      <div className="float-left w-full">
+        <Footer />
+      </div>
     </div>
   );
 }

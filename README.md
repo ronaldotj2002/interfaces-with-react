@@ -4,6 +4,7 @@
 - Tailwind CSS: [https://tailwindcss.com/](https://tailwindcss.com/)
 - React: [https://react.dev/](https://react.dev/)
 - JSON-SERVER: [https://www.npmjs.com/package/json-server](https://www.npmjs.com/package/json-server)
+- REACT-TOASTIFY: [https://www.npmjs.com/package/react-toastify](https://www.npmjs.com/package/react-toastify)
 
 ### Iniciar o Projeto
  - npm i

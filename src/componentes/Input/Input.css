@@ -1,0 +1,21 @@
+.campo-input {
+    margin: 20px 0;
+}
+
+.campo-input label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.campo-input input {
+    background-color:#fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    color: #999;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}

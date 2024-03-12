@@ -1,23 +1,30 @@
-import React from 'react';
+import React  from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Favorito from "./Favorito"
+
 import Header from "./componentes/Header"
-import FormCadastro from "./FormCadastro"
+import FormCadastro from "./Pages/FormCadastro"
+import ListaItens from './Pages/ListaItens'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Header />
+      <Header />
+      
+
       <Routes>
-        <Route path="/favoritos" element={<Favorito />}/>
+      
+        <Route exact path="*" element={<App />}/>
         <Route path="/cadastro" element={<FormCadastro />}/>
         <Route path="/" element={<App />}/>
+        <Route path="/lista" element={<ListaItens />}/>
       </Routes>
+      
     </BrowserRouter>
     
   </React.StrictMode>

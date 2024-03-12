@@ -1,0 +1,12 @@
+
+div form {
+    display: block;
+    width:600px;
+    margin-top: 40px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
